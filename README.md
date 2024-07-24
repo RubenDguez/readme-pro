@@ -15,6 +15,7 @@ A one stop application to get a professional README file.
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+- [Questions](#questions)
 
 ## Installation
 ```sh
