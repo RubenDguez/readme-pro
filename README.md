@@ -5,11 +5,7 @@
 ## Description
 A one stop application to get a professional README file.
 
-<div style='display: flex; justify-content: center; padding: 0; margin: 0'>
-  <video width="100%" height="100%" style="flex-grow: 1" controls autoplay loop mute>
-    <source src="src/video/2024-07-24_19-48-02.mp4" type="video/mp4">
-  </video>
-</div>
+![](static/video/demo.gif)
 
 - Project motivation: Most of the times is hard to remember how a professional README file should be structured and/or easy to forget what to include.
 - Why building this project? To have centralized, easy to use application that generates professional README files
