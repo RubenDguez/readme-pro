@@ -19,7 +19,7 @@
 
 ## Installation
 ```sh
-git clone <repository url>
+git clone <your repository url >
 ```
 <project-installation>
 
