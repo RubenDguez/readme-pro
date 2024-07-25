@@ -16,7 +16,7 @@ export default class Generate {
      * @return {string}
      * @description Function to clean the README.md file
      */
-    #clean(): string {
+    private clean(): string {
         let text = '';
         let isSpace = false;
         for (const line of this._template.split('\n')) {
@@ -38,7 +38,7 @@ export default class Generate {
      * @return {string}
      * @description Function to get the installation command
      */
-    #getInstallation(installation: string): string {
+    private getInstallation(installation: string): string {
         const install: Record<string, string> = {
             npm: '```sh\nnpm install\n```',
             yarn: '```sh\nyarn install\n```',
@@ -78,14 +78,14 @@ export default class Generate {
         this._template = this._template.replace('<project-build>', build ? '- Why building this project? ' + build : '');
         this._template = this._template.replace('<project-solve>', solve ? '- What problem does it solve? ' + solve : '');
         this._template = this._template.replace('<project-learning>', learn ? '- What did you learn? ' + learn : '');
-        this._template = this._template.replace('<project-installation>', this.#getInstallation(installation));
+        this._template = this._template.replace('<project-installation>', this.getInstallation(installation));
         this._template = this._template.replace('<project-usage>', usage);
         this._template = this._template.replace('<project-license-badge>', `![badge](https://img.shields.io/badge/${license.replace(/\s+/g, '_')}-orange)`);
         this._template = this._template.replace('<project-license>', license);
         this._template = this._template.replace('<github-profile>', `- This is my GitHub profile: [${github}](https://github.com/${github})`);
         this._template = this._template.replace('<email-address>', `- If you have further questions, you can contact me at: ${email}`);
 
-        this._template = this.#clean();
+        this._template = this.clean();
 
         return this;
     }
