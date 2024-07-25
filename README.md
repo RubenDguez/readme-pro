@@ -5,7 +5,7 @@
 ## Description
 A one stop application to get a professional README file.
 
-![](static/video/demo.gif)
+![](static/video/project-demo.gif)
 
 - Project motivation: Most of the times is hard to remember how a professional README file should be structured and/or easy to forget what to include.
 - Why building this project? To have centralized, easy to use application that generates professional README files
