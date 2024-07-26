@@ -2,6 +2,12 @@ const prompts: Array<IPrompts> = [
     {
         name: 'name',
         message: 'What is your project name?',
+        validate: (name) => {
+            if (!name.length) {
+                return 'Please provide a project name';
+            }
+            return true;
+        }
     },
     {
         name: 'description',
@@ -45,12 +51,33 @@ const prompts: Array<IPrompts> = [
     },
     {
         name: 'email',
-        message: 'What is your email address?'
+        message: 'What is your email address?',
+        validate: (email) => {
+            if (!email.length) {
+                return 'Please provide an email';
+            }
+            if (email.length <= 3) {
+                return 'Please provide an email greater than 3 characters long';
+            }
+            return true;
+        }
     },
     {
         name: 'github',
-        message: 'What is your GitHub username?'
+        message: 'What is your GitHub username?',
+        validate: (github) => {
+            if (!github.length) {
+                return 'Please provide a GitHub username';
+            }
+            return true;
+        }
     },
+    {
+        name: 'badges',
+        message: 'Choose some badges',
+        type: 'checkbox',
+        choices: ['HTML', 'CSS', 'JavaScript', 'Node', 'Express', 'TypeScript', 'React', 'Redux']
+    }
 ];
 
 export default prompts;
