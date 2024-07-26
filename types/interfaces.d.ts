@@ -10,6 +10,7 @@ interface ICreateOptions {
     installation: TInstallation;
     usage: string;
     license: TLicense;
+    badges: Array<TBadges>
 }
 
 interface IPrompts {
@@ -17,7 +18,8 @@ interface IPrompts {
     message: string,
     default?: string,
     type?: TPromptType,
-    choices?: Array<TLicense> | Array<TInstallation>
+    choices?: Array<TLicense> | Array<TInstallation> | Array<TBadges>
+    validate?: (param: string) => (boolean | string);
 }
 
 interface ILicense {

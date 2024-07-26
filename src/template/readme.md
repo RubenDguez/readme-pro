@@ -1,5 +1,3 @@
-<project-license-badge>
-
 # <project-title>
 
 ## Description
@@ -35,7 +33,11 @@ git clone <your repository url >
 
 ## License
 
-<project-license>
+<project-license-badge>
+
+## Badges
+
+<project-badges>
 
 ## Tests
 
@@ -43,5 +45,5 @@ git clone <your repository url >
 
 ## Questions
 
-<github-profile>
 <email-address>
+<github-profile>

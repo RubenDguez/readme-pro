@@ -9,7 +9,8 @@ type TPromptName =
     'learn' |
     'installation' |
     'usage' |
-    'license';
+    'license' |
+    'badges';
 
 type TPromptType =
     'input' |
@@ -42,3 +43,13 @@ type TInstallation =
     'npm' |
     'yarn' |
     'bun'
+
+type TBadges = 
+    'HTML' |
+    'CSS' |
+    'JavaScript' |
+    'Node' |
+    'Express' |
+    'TypeScript' |
+    'React' |
+    'Redux'
