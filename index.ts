@@ -14,8 +14,9 @@ import Title from "./src/title.js";
             .setup(answers as ICreateOptions)
             .create();
         if (readme) {
-            console.log('\nMake sure to check the newly created file for fine-tuning and any missing information.')
-            console.log('Thank you for using this tool, have a great day!\n');
+            console.log('\n\n🚀 The README file was successfully created in output directory 🗂️')
+            console.log('\nMake sure to check the newly created file for fine-tuning 🔧 and any missing information. 🫡')
+            console.log('Thank you 🤝 for using this tool, have a great day! 😀\n');
         }
     } catch (error) {
         console.error((error as Error).message);
