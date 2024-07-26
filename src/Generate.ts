@@ -25,7 +25,6 @@ export default class Generate {
             }
 
             isSpace = line === '';
-
             text = text + line + '\n';
         }
 

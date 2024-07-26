@@ -106,7 +106,8 @@
     "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
     "types": [
       "node",
-      "./types.d.ts"
+      "./types/types.d.ts",
+      "./types/interfaces.d.ts"
     ]
   },
   "include": ["src", "./"],
