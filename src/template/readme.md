@@ -16,9 +16,7 @@
 - [Questions](#questions)
 
 ## Installation
-```sh
-git clone <your repository url >
-```
+<project-git-clone>
 <project-installation>
 
 ## Usage

@@ -31,6 +31,21 @@ const prompts: Array<IPrompts> = [
         message: 'What did you learn?'
     },
     {
+        name: 'repo',
+        message: 'What is your repo url',
+        validate: (repo) => {
+            if (!repo.length) {
+                return 'Please provide a repository url';
+            }
+
+            if(!repo.includes('.git')) {
+                return 'Please provide a valid repository url';
+            }
+
+            return true;
+        }
+    },
+    {
         name: 'installation',
         message: 'Package manager',
         default: 'npm',

@@ -10,7 +10,8 @@ type TPromptName =
     'installation' |
     'usage' |
     'license' |
-    'badges';
+    'badges' |
+    'repo'
 
 type TPromptType =
     'input' |

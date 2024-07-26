@@ -92,6 +92,21 @@ export default class Generate {
     }
 
     /**
+     * Get Clone Repository
+     * @param {string} repo
+     * @return {string}
+     * @description Method to get the git clone command
+     */
+    private getConeRepository(repo: string): string {
+        let last = repo.split('/').length - 1;
+        let _repo = repo.split('/')[last];
+
+        _repo = _repo.split('.')[0];
+
+        return '```sh\ngit clone ' + repo + '\ncd ' + _repo +'\n```';
+    }
+
+    /**
      * Get Installation
      * @param {TInstallation} installation 
      * @return {string}
@@ -125,11 +140,13 @@ export default class Generate {
         installation,
         usage,
         license,
-        badges
+        badges,
+        repo,
     }: ICreateOptions): Generate {
         const _installation = this.getInstallation(installation);
         const _license = this.genLicense(license);
         const _badges = this.getBadges(badges);
+        const _repository = this.getConeRepository(repo);
 
         this._template = this._template.replace('<project-title>', name);
         this._template = this._template.replace('<project-description>', description);
@@ -137,6 +154,7 @@ export default class Generate {
         this._template = this._template.replace('<project-build>', build ? '- Why building this project? ' + build : '');
         this._template = this._template.replace('<project-solve>', solve ? '- What problem does it solve? ' + solve : '');
         this._template = this._template.replace('<project-learning>', learn ? '- What did you learn? ' + learn : '');
+        this._template = this._template.replace('<project-git-clone>', _repository);
         this._template = this._template.replace('<project-installation>', _installation);
         this._template = this._template.replace('<project-usage>', usage);
         this._template = this._template.replace('<project-license-badge>', _license);

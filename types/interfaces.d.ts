@@ -11,6 +11,7 @@ interface ICreateOptions {
     usage: string;
     license: TLicense;
     badges: Array<TBadges>
+    repo: string
 }
 
 interface IPrompts {
