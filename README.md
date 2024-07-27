@@ -2,15 +2,15 @@
 
 # README Pro
 
+![](static/demo.gif)
+
 ## Description
-A one stop application to get a professional README file.
+README Pro is a user-friendly application designed to generate professional README files effortlessly. This tool serves as a centralized platform where users can quickly and easily create well-structured README files for their projects.
 
-![](static/video/project-demo.gif)
-
-- Project motivation: Most of the times is hard to remember how a professional README file should be structured and/or easy to forget what to include.
-- Why building this project? To have centralized, easy to use application that generates professional README files
-- What problem does it solve? It generates professional README files with little to no effort
-- What did you learn? How to use inquirer, a nice tool to interact with the user through the CLI
+- Project Motivation: Creating a professional README file often poses challenges, including remembering the correct structure and necessary components. README Pro addresses these challenges by providing a straightforward solution that simplifies the process.
+- Why Build This Project? The primary goal of README Pro is to offer an easy-to-use application that generates high-quality README files. By centralizing this functionality, users can save time and ensure their README files meet professional standards without hassle.
+- Problem Solved: README Pro eliminates the difficulty of remembering README file structure and content requirements. It allows users to generate professional README files with minimal effort, ensuring consistency and quality.
+- What Was Learned: During the development of README Pro, key skills were acquired, including the use of Inquirer, a powerful tool for creating interactive command-line interfaces (CLI). This project provided valuable experience in user interaction and automation through the CLI.
 
 ## Table of Contents
 
@@ -21,21 +21,26 @@ A one stop application to get a professional README file.
 
 ## Installation
 ```sh
-git clone <repository url>
-```
-```sh
+git clone https://github.com/RubenDguez/readme-pro.git
+
+cd readme-pro
+
 npm install
 ```
 
 ## Usage
 
-After installing the project, run: `npm run start`
+```sh
+npm run start
+
+# Provide prompted information
+```
 
 ## License
 
-MIT License
+[![](https://img.shields.io/badge/License-MIT_License-green)](https://opensource.org/license/mit)
 
 ## Questions
 
-- This is my GitHub profile: [RubenDguez](https://github.com/RubenDguez)
 - If you have further questions, you can contact me at: argenis.dominguez@hotmail.com
+- This is my GitHub profile: [RubenDguez](https://github.com/RubenDguez)
