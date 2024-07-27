@@ -38,6 +38,11 @@ npm run start
 
 [![](https://img.shields.io/badge/License-MIT_License-green)](https://opensource.org/license/mit)
 
+## Badges
+
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
 ## Questions
 
 - If you have further questions, you can contact me at: argenis.dominguez@hotmail.com
