@@ -1,5 +1,3 @@
-![badge](https://img.shields.io/badge/MIT_License-orange)
-
 # README Pro
 
 ![](static/demo.gif)
