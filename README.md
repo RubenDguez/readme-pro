@@ -47,3 +47,5 @@ npm run start
 
 - If you have further questions, you can contact me at: argenis.dominguez@hotmail.com
 - This is my GitHub profile: [RubenDguez](https://github.com/RubenDguez)
+- Watch demo video on YouTube: [Demo](https://www.youtube.com/watch?v=opUc3G43uqc&ab_channel=ArgenisDominguez)
+- Generated example: [example](example/README.1722258576882.md)
